@@ -1,0 +1,47 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.challenge-card {
+  border: 1px solid black;
+}
+
+.challenge-card-grid {
+  background-color: gray;
+}
+
+.challenge-card-col {
+  padding: 15px;
+}
+
+.challenge-card-start-div {
+  color: blue;
+  cursor: pointer;
+}
+
+.challenge-preview {
+    width: 50%;
+    height: 50%;
+    left: 25%;
+    top: 25%;
+    z-index: 9999;
+    border: 1px solid Black;
+    text-align: left;
+    position: fixed;
+    background: lightblue;
+}

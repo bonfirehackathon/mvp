@@ -1,0 +1,28 @@
+To Bootstrap:
+
+Python3 installed, npm installed
+
+# Create Virtual Environment
+python -m venv htc
+
+# Activate venv
+source htc/bin/activate
+
+# Install all reqs
+pip install -r requirements.txt
+
+# nav to static and install npm reqs
+cd static
+npm install 
+
+# nav back, set env var for local sqlite sb, migrate db
+cd ..
+export DATABASE_URL="sqlite:///hackthecurve.db"
+python manage.py create_db
+
+export TWILIO_SID=<ACCOUND SID>
+export TWILIO_API_KEY=<API_KEY>
+export TWILIO_API_SECRET=<API_SECRET>
+
+# Run server
+python manage.py runserver
