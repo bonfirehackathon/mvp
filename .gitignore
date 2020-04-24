@@ -1,0 +1,5 @@
+*.pyc
+htc/
+*.log
+*.db
+Procfile
